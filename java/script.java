@@ -3,8 +3,11 @@ function calculateBMI() {
     var height = document.getElementById("height").value;
     var age = document.getElementById("age").value;
     var gender = document.getElementById("gender").value;
+    var resultElement = document.getElementById("result");
+    var imageElement = document.querySelector(".result-image");
     var bmi = (weight / ((height / 100) * (height / 100))).toFixed(2);
     var resultElement = document.getElementById("result");
+    imageElement.style.display = "block";
     var interpretation = "";
     var advice = "";
     var impact = "";
